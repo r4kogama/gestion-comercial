@@ -9,10 +9,17 @@ export class CustomerDataComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(){
-    
-  }
+ //captura el momento exacto que se crea el componente
+ //viene definido en una interfaz
+ ngOnInit(): void {
+  //justo antes que se renderize el html.. se tiene que captura antes
+}
 
+//captura el momento exacto que el componente se destruye
+/*   ngOnDestroy(){
+
+}
+*/
 
 
 

@@ -10,9 +10,9 @@ const routes: Routes = [
   {path:'', redirectTo:'/home', pathMatch:'full'},
   {path:'customer',component:CustomerListComponent},
   {path:'customer/:id', component: CustomerDataComponent},
-  {path:'**', component:NotfoundComponent}
+  {path:'**', component:NotfoundComponent}//si no hay ruta
 ];
-
+  //invoca metodo statico forROot carga la calse en memoria con al rutas que hay enb el array
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
